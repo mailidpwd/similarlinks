@@ -1,0 +1,88 @@
+# Exclude large/unnecessary files from Cloud Run deployment
+
+# Python virtual environment
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Node modules (if any)
+node_modules/
+
+# Environment files (sensitive)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+*.log.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test files (optional - include if you want to exclude tests)
+# test_*.py
+# *_test.py
+# tests/
+
+# Documentation (optional - include if you want to exclude docs)
+# *.md
+# docs/
+
+# Keep only essential files
+!main.py
+!requirements.txt
+!Dockerfile
+!*.py
+!scraper_api.py
+!multi_platform_search.py
+!gemini_vision.py
+!firestore_service.py
+!cloud_logging_service.py
+

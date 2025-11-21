@@ -1,0 +1,9 @@
+# Command Prompt (cmd.exe) - Single Line Command
+# Copy and paste this entire line into Command Prompt
+
+# First, navigate to backend directory:
+cd "C:\Users\Michael\Documents\RDM Projects\Version 2\SimilarLinks\backend"
+
+# Then run this single line (REPLACE YOUR-SCRAPERAPI-KEY with your actual ScraperAPI key):
+gcloud run deploy decision-recommendation-api --source . --platform managed --region us-central1 --allow-unauthenticated --set-env-vars GEMINI_API_KEY=AIzaSyAafxIHpryH3m-RF9xEIcXsRlpDGXxq28k,SCRAPERAPI_KEY=YOUR-SCRAPERAPI-KEY,GCP_PROJECT_ID=decision-recommendation-app --memory 2Gi --cpu 2 --timeout 300 --max-instances 10
+

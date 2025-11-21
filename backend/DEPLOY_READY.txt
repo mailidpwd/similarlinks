@@ -1,0 +1,18 @@
+========================================
+READY TO DEPLOY - Copy and Run This
+========================================
+
+Step 1: Navigate to backend directory
+cd "C:\Users\Michael\Documents\RDM Projects\Version 2\SimilarLinks\backend"
+
+Step 2: Replace YOUR-SCRAPERAPI-KEY below with your actual ScraperAPI key, then run:
+
+gcloud run deploy decision-recommendation-api --source . --platform managed --region us-central1 --allow-unauthenticated --set-env-vars GEMINI_API_KEY=AIzaSyAafxIHpryH3m-RF9xEIcXsRlpDGXxq28k,SCRAPERAPI_KEY=YOUR-SCRAPERAPI-KEY,GCP_PROJECT_ID=decision-recommendation-app --memory 2Gi --cpu 2 --timeout 300 --max-instances 10
+
+========================================
+NOTE: 
+- Gemini API Key is already set: AIzaSyAafxIHpryH3m-RF9xEIcXsRlpDGXxq28k
+- You need to replace YOUR-SCRAPERAPI-KEY with your actual ScraperAPI key
+- Get your ScraperAPI key from: https://www.scraperapi.com/
+========================================
+
